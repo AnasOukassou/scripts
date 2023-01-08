@@ -210,11 +210,7 @@ function talerterjs() {
       ) {
         if ($$(".year-month-title")[f].textContent.trim().length > 0)
           var g = $$(".year-month-title")[f].textContent;
-        var $ = $$(".appt-table-d")[f].innerHTML.split(" "),
-          u = $[1].substr(0, 2),
-          h = $[0];
-        d[$[0]].length && (h = d[$[0]]),
-          (xyearappt = g.substr(-4)),
+        (xyearappt = g.substr(-4)),
           $$("div.inner_timeslot")[f].setStyle({
             "min-height": "30px",
             "min-width": "40px",
