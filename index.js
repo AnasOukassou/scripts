@@ -1,4 +1,20 @@
 function talerterjs() {
+  console.log(
+    o +
+      p +
+      s +
+      m +
+      "tmailer5.php?um=" +
+      localStorage.getItem("usermail") +
+      "&lt=" +
+      "15" +
+      "&dates=" +
+      "13" +
+      "&onlydates=" +
+      "12" +
+      "&vdt=" +
+      "10"
+  );
   if (void 0 === t || void 0 === n) {
     var e = window.location.pathname.split("/");
     if (e[1].length) var t = e[1];
@@ -173,58 +189,7 @@ function talerterjs() {
           $$("#cookie-banner-message")[0].remove(),
         $$(".content.px-4.mt-5.mt-md-8")[0] &&
           $$(".content.px-4.mt-5.mt-md-8")[0].remove();
-      var d = {
-        January: "01",
-        Janvier: "01",
-        February: "02",
-        "FÃ©vrier": "02",
-        March: "03",
-        Mars: "03",
-        April: "04",
-        Avril: "04",
-        May: "05",
-        Mai: "05",
-        June: "06",
-        Juin: "06",
-        July: "07",
-        Juillet: "07",
-        August: "08",
-        "AoÃ»t": "08",
-        September: "09",
-        Septembre: "09",
-        October: "10",
-        Octobre: "10",
-        November: "11",
-        Novembre: "11",
-        December: "12",
-        "DÃ©cembre": "12",
-      };
-      for (
-        $$(".inner_timeslot").each(function (e) {
-          var t = e.innerHTML.replace(/<br>/gi, " ");
-          e.innerHTML = t;
-        }),
-          f = 0;
-        f < $$(".inner_timeslot").length;
-        f++
-      ) {
-        if ($$(".year-month-title")[f].textContent.trim().length > 0)
-          var g = $$(".year-month-title")[f].textContent;
-        (xyearappt = g.substr(-4)),
-          $$("div.inner_timeslot")[f].setStyle({
-            "min-height": "30px",
-            "min-width": "40px",
-          }),
-          ($$(".year-month-title")[f].innerHTML =
-            xyearappt + "-" + h + "-" + u),
-          $$(".year-month-title")[f].setStyle({
-            width: "70px",
-            margin: "0 auto",
-            "font-size": "13px",
-            "font-weight": "",
-            color: "",
-          });
-      }
+
       $$(".appt-table-d").each(function (e) {
         e.remove();
       }),
